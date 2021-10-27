@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Построение чартов по данным</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--<iframe id="remember" name="remember" style="display:none;" src="."></iframe>-->
+<script>
+    function onFinish() {
+        alert("Данные успешно загружены, можете посмотреть их в дашбоарде")
+    }
+</script>
+<form target="remember" method="post" action="/send" class="form-style-7">
+    <ul>
+        <li>
+            <label>Ссылка на данные:</label>
+            <input type="text" name="site">
+            <span>Json</span>
+        </li>
+        <li>
+            <input type="submit" value="Анализировать" onclick="onFinish()">
+        </li>
+    </ul>
+</form>
+
+</body>
+</html>
